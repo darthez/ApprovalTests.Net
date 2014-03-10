@@ -43,55 +43,6 @@ namespace ApprovalTests.Tests.Reporters
         }
 
         [Test]
-        public void TestLaunchesBeyondCompareImage()
-        {
-            AssertLauncher("../../a.png", "../../b.png", BeyondCompareReporter.INSTANCE);
-        }
-
-        [Test]
-        public void TestLaunchesCodeCompare()
-        {
-            AssertLauncher("../../a.txt", "../../b.txt", CodeCompareReporter.INSTANCE);
-        }
-
-        [Test]
-        public void TestLaunchesKDiff()
-        {
-            AssertLauncher("../../a.txt", "../../b.txt", KDiffReporter.INSTANCE);
-        }
-
-        [Test]
-        public void TestLaunchesP4Merge()
-        {
-            AssertLauncher("../../a.txt", "../../b.txt", P4MergeTextReporter.INSTANCE);
-        }
-
-        [Test]
-        public void TestLaunchesP4MergeImage()
-        {
-            AssertLauncher("../../a.png", "../../b.png", P4MergeImageReporter.INSTANCE);
-        }
-
-        [Test]
-        public void TestLaunchesTortoiseImage()
-        {
-            AssertLauncher("../../a.png", "../../b.png", TortoiseImageDiffReporter.INSTANCE);
-        }
-
-        [Test]
-        public void TestLaunchesTortoiseMerge()
-        {
-            AssertLauncher("../../a.txt", "../../b.txt", TortoiseTextDiffReporter.INSTANCE);
-        }
-
-        [Test]
-        public void TestLaunchesVisualStudio()
-        {
-            ApprovalResults.UniqueForMachineName();
-            AssertLauncher("../../a.txt", "../../b.txt", VisualStudioReporter.INSTANCE);
-        }
-
-        [Test]
         public void TestMissingDots()
         {
             var e =
@@ -111,28 +62,6 @@ namespace ApprovalTests.Tests.Reporters
             var r = new TortoiseDiffReporter();
             GenericDiffReporter.RegisterTextFileTypes(".myCrazyExtension");
             Assert.IsTrue(r.IsWorkingInThisEnvironment("file.myCrazyExtension"));
-        }
-
-        [Test]
-        public void TestWinMerge()
-        {
-            ApprovalResults.UniqueForMachineName();
-            AssertLauncher("../../a.txt", "../../b.txt", WinMergeReporter.INSTANCE);
-        }
-
-        private static void AssertLauncher(string approved, string received, GenericDiffReporter reporter)
-        {
-            try
-            {
-                ApprovalResults.UniqueForMachineName();
-                var args = reporter.GetLaunchArguments(approved, received);
-
-                Approvals.VerifyWithCallback(args, s => StartProcess(s));
-            }
-            finally
-            {
-                NamerFactory.Clear();
-            }
         }
     }
 }

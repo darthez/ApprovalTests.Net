@@ -124,7 +124,6 @@
     <Compile Include="Core\IEnvironmentAwareReporter.cs" />
     <Compile Include="Email\EmailApprovals.cs" />
     <Compile Include="Events\EventApprovals.cs" />
-    <Compile Include="ExecutableLambda.cs" />
     <Compile Include="Core\IReporterWithApprovalPower.cs" />
     <Compile Include="Html\HtmlApprovals.cs" />
     <Compile Include="Maintenance\ApprovalMaintenance.cs" />
@@ -137,13 +136,6 @@
     <Compile Include="Namers\UseApprovalSubdirectoryAttribute.cs" />
     <Compile Include="Namers\UseNamerAttribute.cs" />
     <Compile Include="PdfScrubber.cs" />
-    <Compile Include="Persistence\DatabaseApprovals.cs" />
-    <Compile Include="Persistence\EntityFramework\EntityFrameworkApprovals.cs" />
-    <Compile Include="Persistence\DataSets\ColumnDefaults.cs" />
-    <Compile Include="Persistence\DataSets\DataSetTestingUtilities.cs" />
-    <Compile Include="Persistence\EntityFramework\Version5\DbContextAdaptor.cs" />
-    <Compile Include="Persistence\EntityFramework\Version5\EntityFrameworkDbContextApprovals.cs" />
-    <Compile Include="Persistence\NHibernate\NHibernateApprovals.cs" />
     <Compile Include="Core\ConsoleUtilities.cs" />
     <Compile Include="RdlcReports\RdlcApprovals.cs" />
     <Compile Include="Reporters\AppConfigReporter.cs" />
@@ -171,7 +163,6 @@
     <Compile Include="Reporters\VisualStudioProjectFileAdder.cs" />
     <Compile Include="Reporters\VisualStudioReporter.cs" />
     <Compile Include="Reporters\XUnitReporter.cs" />
-    <Compile Include="Reporters\ExecutableQueryFailure.cs" />
     <Compile Include="Reporters\DiffReporter.cs" />
     <Compile Include="Reporters\FirstWorkingReporter.cs" />
     <Compile Include="Reporters\FrameworkAssertReporter.cs" />

@@ -11,7 +11,6 @@ using ApprovalTests.Reporters;
 using ApprovalTests.Writers;
 using ApprovalTests.Xml;
 using ApprovalUtilities.CallStack;
-using ApprovalUtilities.Persistence;
 using ApprovalUtilities.Utilities;
 using BinaryWriter = ApprovalTests.Writers.BinaryWriter;
 
@@ -85,11 +84,11 @@ namespace ApprovalTests
 			return useReporter != null ? useReporter.Reporter : null;
 		}
 
-		public static void Verify(IExecutableQuery query)
-		{
-			Verify(new ApprovalTextWriter(query.GetQuery()), GetDefaultNamer(),
-			       new ExecutableQueryFailure(query, GetReporter()));
-		}
+        //public static void Verify(IExecutableQuery query)
+        //{
+        //    Verify(new ApprovalTextWriter(query.GetQuery()), GetDefaultNamer(),
+        //           new ExecutableQueryFailure(query, GetReporter()));
+        //}
 
 		public static void Verify(IApprovalWriter writer)
 		{
@@ -106,15 +105,15 @@ namespace ApprovalTests
 			VerifyFile(file.FullName);
 		}
 
-		public static void VerifyWithCallback(object text, Action<string> callBackOnFailure)
-		{
-			Verify(new ExecutableLambda("" + text, callBackOnFailure));
-		}
+        //public static void VerifyWithCallback(object text, Action<string> callBackOnFailure)
+        //{
+        //    Verify(new ExecutableLambda("" + text, callBackOnFailure));
+        //}
 
-		public static void VerifyWithCallback(object text, Func<string, string> callBackOnFailure)
-		{
-			Verify(new ExecutableLambda("" + text, callBackOnFailure));
-		}
+        //public static void VerifyWithCallback(object text, Func<string, string> callBackOnFailure)
+        //{
+        //    Verify(new ExecutableLambda("" + text, callBackOnFailure));
+        //}
 
 		#region Text
 
