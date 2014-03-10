@@ -1,5 +1,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CC679657-AF36-470E-9976-BB00E6792F32}"
 	ProjectSection(SolutionItems) = preProject
 		ApprovalTests.build = ApprovalTests.build
@@ -20,30 +22,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApprovalTests", "ApprovalTe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApprovalTests.Tests", "ApprovalTests.Tests\ApprovalTests.Tests.csproj", "{7B8D265D-35BB-4817-B074-F5056E5A9B4E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApprovalDemos", "ApprovalDemos\ApprovalDemos.csproj", "{7ACFCE47-789B-42F4-8B62-EBEF04B4100A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApprovalTests.MSTest", "ApprovalTests.MSTest\ApprovalTests.MSTest.csproj", "{55C72CD1-7EFA-4A12-8C6F-7F917CF83A40}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApprovalUtilities.Tests", "ApprovalUtilities.Tests\ApprovalUtilities.Tests.csproj", "{01EB7BB9-743C-4FB0-B97F-A6E2B4AF86CF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApprovalUtilities", "ApprovalUtilities\ApprovalUtilities.csproj", "{E9683C33-7A71-4776-B7C9-E89C565AC16B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp.Net.Demo", "Asp.Net.Demo\Asp.Net.Demo.csproj", "{4A185DA2-D6DA-4E45-A4E8-1DC67B849EAE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportingDemo", "ReportingDemo\ReportingDemo.csproj", "{F50278FC-C888-4DD3-898D-CFCF99147E3D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcApplication.Razor", "MvcApplication.Razor\MvcApplication.Razor.csproj", "{350DD60C-8C32-449C-9029-9E0195C756AA}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApprovalTests.MSpec", "ApprovalTests.MSpec\ApprovalTests.MSpec.csproj", "{55CE757D-BBE0-4006-898C-CC884D95C520}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApprovalTests.MbUnit", "ApprovalTests.MbUnit\ApprovalTests.MbUnit.csproj", "{51C095FB-042D-4BFC-8F2A-ECF622B2B5CF}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApprovalTests.Xunit", "ApprovalTests.Xunit\ApprovalTests.Xunit.csproj", "{B8AAA028-1890-40B6-84B8-2F46986EEE8C}"
-EndProject
 Global
-	GlobalSection(TestCaseManagementSettings) = postSolution
-		CategoryFile = ApprovalTests1.vsmdi
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -57,14 +40,6 @@ Global
 		{7B8D265D-35BB-4817-B074-F5056E5A9B4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B8D265D-35BB-4817-B074-F5056E5A9B4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B8D265D-35BB-4817-B074-F5056E5A9B4E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7ACFCE47-789B-42F4-8B62-EBEF04B4100A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7ACFCE47-789B-42F4-8B62-EBEF04B4100A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7ACFCE47-789B-42F4-8B62-EBEF04B4100A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7ACFCE47-789B-42F4-8B62-EBEF04B4100A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{55C72CD1-7EFA-4A12-8C6F-7F917CF83A40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{55C72CD1-7EFA-4A12-8C6F-7F917CF83A40}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{55C72CD1-7EFA-4A12-8C6F-7F917CF83A40}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{55C72CD1-7EFA-4A12-8C6F-7F917CF83A40}.Release|Any CPU.Build.0 = Release|Any CPU
 		{01EB7BB9-743C-4FB0-B97F-A6E2B4AF86CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{01EB7BB9-743C-4FB0-B97F-A6E2B4AF86CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01EB7BB9-743C-4FB0-B97F-A6E2B4AF86CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -73,32 +48,11 @@ Global
 		{E9683C33-7A71-4776-B7C9-E89C565AC16B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9683C33-7A71-4776-B7C9-E89C565AC16B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9683C33-7A71-4776-B7C9-E89C565AC16B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4A185DA2-D6DA-4E45-A4E8-1DC67B849EAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4A185DA2-D6DA-4E45-A4E8-1DC67B849EAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4A185DA2-D6DA-4E45-A4E8-1DC67B849EAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4A185DA2-D6DA-4E45-A4E8-1DC67B849EAE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F50278FC-C888-4DD3-898D-CFCF99147E3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F50278FC-C888-4DD3-898D-CFCF99147E3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F50278FC-C888-4DD3-898D-CFCF99147E3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F50278FC-C888-4DD3-898D-CFCF99147E3D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{350DD60C-8C32-449C-9029-9E0195C756AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{350DD60C-8C32-449C-9029-9E0195C756AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{350DD60C-8C32-449C-9029-9E0195C756AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{350DD60C-8C32-449C-9029-9E0195C756AA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{55CE757D-BBE0-4006-898C-CC884D95C520}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{55CE757D-BBE0-4006-898C-CC884D95C520}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{55CE757D-BBE0-4006-898C-CC884D95C520}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{55CE757D-BBE0-4006-898C-CC884D95C520}.Release|Any CPU.Build.0 = Release|Any CPU
-		{51C095FB-042D-4BFC-8F2A-ECF622B2B5CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{51C095FB-042D-4BFC-8F2A-ECF622B2B5CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{51C095FB-042D-4BFC-8F2A-ECF622B2B5CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{51C095FB-042D-4BFC-8F2A-ECF622B2B5CF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B8AAA028-1890-40B6-84B8-2F46986EEE8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B8AAA028-1890-40B6-84B8-2F46986EEE8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B8AAA028-1890-40B6-84B8-2F46986EEE8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B8AAA028-1890-40B6-84B8-2F46986EEE8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = ApprovalTests1.vsmdi
 	EndGlobalSection
 EndGlobal
